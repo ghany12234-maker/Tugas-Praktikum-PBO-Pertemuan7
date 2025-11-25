@@ -1,0 +1,41 @@
+class Civitas {
+    String nama;
+
+    Civitas(String nama) {
+        this.nama = nama;
+    }
+
+    void tampil() {
+        System.out.println("Nama: " + nama);
+    }
+}
+
+class Dosen extends Civitas {
+    Dosen(String nama) {
+        super(nama);
+    }
+}
+
+class Mahasiswa extends Civitas {
+    Mahasiswa(String nama) {
+        super(nama);
+    }
+}
+
+class Staff extends Civitas {
+    Staff(String nama) {
+        super(nama);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dosen d = new Dosen("Dr. Andi");
+        Mahasiswa m = new Mahasiswa("Budi");
+        Staff s = new Staff("Sinta");
+
+        d.tampil();
+        m.tampil();
+        s.tampil();
+    }
+}
